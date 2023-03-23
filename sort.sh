@@ -9,4 +9,4 @@ IFS=$'\n'
 # ranger les arguments par ordre alphabétique
 args=($(sort -f <<<"${args[*]}")) # l'opérateur <<< permet de donner le tableau args en entrée standard de sort qui attend normalement un fichier
 # afficher le résultat
-echo "${args[@]}"
+echo "${args[@]}$IFS"
